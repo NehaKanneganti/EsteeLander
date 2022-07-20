@@ -26,11 +26,13 @@
       "size" : "40x40"
     },
     {
+      "filename" : "frontlogo (7)-1.jpg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
+      "filename" : "frontlogo (7).jpg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
@@ -46,6 +48,7 @@
       "size" : "20x20"
     },
     {
+      "filename" : "frontlogo (9).jpg",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
@@ -61,6 +64,7 @@
       "size" : "29x29"
     },
     {
+      "filename" : "frontlogo (9)-1.jpg",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
@@ -69,6 +73,11 @@
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "76x76"
     },
     {
       "idiom" : "ipad",

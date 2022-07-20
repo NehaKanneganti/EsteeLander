@@ -17,6 +17,9 @@
 		79F0A1ED28888A3C00DFEA03 /* promotionlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A1EC28888A3C00DFEA03 /* promotionlineTests.swift */; };
 		79F0A1F728888A3C00DFEA03 /* promotionlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A1F628888A3C00DFEA03 /* promotionlineUITests.swift */; };
 		79F0A1F928888A3C00DFEA03 /* promotionlineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A1F828888A3C00DFEA03 /* promotionlineUITestsLaunchTests.swift */; };
+		79F0A20A288890FE00DFEA03 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A209288890FE00DFEA03 /* OnboardingViewController.swift */; };
+		79F0A20C288893D500DFEA03 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A20B288893D500DFEA03 /* OnboardingSlide.swift */; };
+		79F0A20E288895C900DFEA03 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A20D288895C900DFEA03 /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		79F0A1F228888A3C00DFEA03 /* promotionlineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = promotionlineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F0A1F628888A3C00DFEA03 /* promotionlineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = promotionlineUITests.swift; sourceTree = "<group>"; };
 		79F0A1F828888A3C00DFEA03 /* promotionlineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = promotionlineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79F0A209288890FE00DFEA03 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		79F0A20B288893D500DFEA03 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		79F0A20D288895C900DFEA03 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 		79F0A1D128888A3C00DFEA03 /* promotionline */ = {
 			isa = PBXGroup;
 			children = (
+				79F0A207288890CA00DFEA03 /* CustomViews */,
+				79F0A206288890B600DFEA03 /* Views */,
+				79F0A205288890A600DFEA03 /* Models */,
 				79F0A1D228888A3C00DFEA03 /* AppDelegate.swift */,
 				79F0A1D428888A3C00DFEA03 /* SceneDelegate.swift */,
 				79F0A1D628888A3C00DFEA03 /* ViewController.swift */,
@@ -128,6 +137,38 @@
 				79F0A1F828888A3C00DFEA03 /* promotionlineUITestsLaunchTests.swift */,
 			);
 			path = promotionlineUITests;
+			sourceTree = "<group>";
+		};
+		79F0A205288890A600DFEA03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79F0A20B288893D500DFEA03 /* OnboardingSlide.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79F0A206288890B600DFEA03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79F0A208288890E000DFEA03 /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79F0A207288890CA00DFEA03 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		79F0A208288890E000DFEA03 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				79F0A209288890FE00DFEA03 /* OnboardingViewController.swift */,
+				79F0A20D288895C900DFEA03 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +304,10 @@
 			files = (
 				79F0A1D728888A3C00DFEA03 /* ViewController.swift in Sources */,
 				79F0A1DD28888A3C00DFEA03 /* promotionline.xcdatamodeld in Sources */,
+				79F0A20A288890FE00DFEA03 /* OnboardingViewController.swift in Sources */,
 				79F0A1D328888A3C00DFEA03 /* AppDelegate.swift in Sources */,
+				79F0A20C288893D500DFEA03 /* OnboardingSlide.swift in Sources */,
+				79F0A20E288895C900DFEA03 /* OnboardingCollectionViewCell.swift in Sources */,
 				79F0A1D528888A3C00DFEA03 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

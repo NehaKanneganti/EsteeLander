@@ -131,7 +131,7 @@
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="83.705357142857139"/>
         </scene>
-        <!--FAQs-->
+        <!--Routine Tracker-->
         <scene sceneID="QTT-qP-oyM">
             <objects>
                 <viewController id="N2N-vf-OOt" sceneMemberID="viewController">
@@ -141,7 +141,7 @@
                         <viewLayoutGuide key="safeArea" id="Aup-9U-05Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="FAQs" id="Rfv-NZ-74u"/>
+                    <navigationItem key="navigationItem" title="Routine Tracker" id="Rfv-NZ-74u"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvX-aX-eiM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,8 +175,24 @@
                                     <segue destination="zJC-ws-O94" kind="show" id="1fb-QD-ijs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eei-QV-zvb">
+                                <rect key="frame" x="68" y="581" width="279" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Routine Tracker" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="N2N-vf-OOt" kind="show" id="8yc-hS-K69"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0K-g4-TWr">
-                                <rect key="frame" x="68" y="443" width="279" height="66"/>
+                                <rect key="frame" x="68" y="453" width="279" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -189,22 +205,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="uig-z8-BFv" kind="show" id="X1l-XD-490"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eei-QV-zvb">
-                                <rect key="frame" x="68" y="581" width="279" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="FAQs" cornerStyle="capsule">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="N2N-vf-OOt" kind="show" id="8yc-hS-K69"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -544,6 +544,9 @@
                                                 <color key="tintColor" red="0.35525893180000001" green="0.52247080180000005" blue="0.43485187679999998" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <segue destination="tG1-am-Y1R" kind="show" id="uDf-CV-S1O"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaJ-cb-eeS">
                                                 <rect key="frame" x="226" y="2279" width="171" height="244"/>
@@ -551,6 +554,9 @@
                                                 <color key="tintColor" red="0.35525893180000001" green="0.52247080180000005" blue="0.43485187679999998" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <segue destination="YpF-Xk-KkR" kind="show" id="ntF-Iv-IEG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVO-85-wXf">
                                                 <rect key="frame" x="217" y="1976" width="171" height="244"/>
@@ -558,6 +564,9 @@
                                                 <color key="tintColor" red="0.35525893180000001" green="0.52247080180000005" blue="0.43485187679999998" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <segue destination="F26-IA-rwV" kind="show" id="xWv-4y-XaE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeG-BU-PaB">
                                                 <rect key="frame" x="13" y="1976" width="171" height="244"/>
@@ -565,6 +574,9 @@
                                                 <color key="tintColor" red="0.35525893180000001" green="0.52247080180000005" blue="0.43485187679999998" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <segue destination="FQf-0b-UzX" kind="show" id="rIY-TW-deM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="742-Je-MW1">
                                                 <rect key="frame" x="13" y="2576" width="171" height="244"/>
@@ -572,6 +584,9 @@
                                                 <color key="tintColor" red="0.35525893180000001" green="0.52247080180000005" blue="0.43485187679999998" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <segue destination="Xaa-iL-Ci1" kind="show" id="VlW-bH-byN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -606,6 +621,239 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rfb-6L-Qif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2505.7971014492755" y="83.705357142857139"/>
+        </scene>
+        <!--Product Details-->
+        <scene sceneID="wqs-lG-MEq">
+            <objects>
+                <viewController id="Xaa-iL-Ci1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="exG-R0-68f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqp-zR-bbN">
+                                <rect key="frame" x="25" y="122" width="365" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Firm + Lift
+Day To Night</string>
+                                <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgs-Dh-Pxh">
+                                <rect key="frame" x="25" y="138" width="365" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The power is within your skin to feel firmer, look radiant, deeply nourished—and now, more lifted. Discover these high-performance formulas to significantly improve firmness, density and elasticity for a more lifted look. Reduce the look of lines and wrinkles. Skin glows with a new healthy-looking vitality.
+</string>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Use" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME5-gl-bxq">
+                                <rect key="frame" x="25" y="413" width="365" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aN1-No-QTl">
+                                <rect key="frame" x="20" y="460" width="365" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Cleanse skin with Perfectly Clean Cleanser AM and PM.
+
+Apply Advanced Night Repair AM and PM before your moisturizer.
+
+Apply Revitalizing Supreme+ Creme AM on face.
+
+Apply Revitalizing Supreme+ Eye Balm AM and PM around eye area.
+</string>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9f4-vj-agv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Product Details" id="Vvs-dp-cJQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mcr-E8-Rok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4738" y="2309"/>
+        </scene>
+        <!--Product Details-->
+        <scene sceneID="IZx-qa-h5I">
+            <objects>
+                <viewController id="FQf-0b-UzX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PaY-79-zbi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwx-JY-Y5o">
+                                <rect key="frame" x="7" y="113" width="390" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Advanced Night Repair Eye Serum
+Synchronized Complex II</string>
+                                <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wC-HZ-Fii">
+                                <rect key="frame" x="20" y="161" width="365" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">
+Now re-ignite the youthful light of your eyes.
+Reduces the look of key visible signs of eye aging: fine lines, wrinkles, dark circles and dryness.
+
+With exclusive ChronoluxCB™ Technology, it maximizes the power of night to re-ignite the light that can fade due to fatigue, pollution and age.
+
+See your most beautiful eyes ever.</string>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Use" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlJ-8y-uP3">
+                                <rect key="frame" x="25" y="529" width="365" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hey-d1-W53">
+                                <rect key="frame" x="32" y="499" width="365" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Apply AM and PM to clean skin around eye area. Ideal under your targeted eye creme.
+
+
+</string>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GCb-rj-9qK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Product Details" id="bDl-uQ-jHh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uA3-u6-zHL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7000" y="1604"/>
+        </scene>
+        <!--Product Details-->
+        <scene sceneID="Q5y-VZ-Jdp">
+            <objects>
+                <viewController id="F26-IA-rwV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XQq-e4-fhU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bF9-4O-b2Z">
+                                <rect key="frame" x="20" y="129" width="365" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Advanced Night Repair
+Concentrated Recovery Eye Mask</string>
+                                <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxt-yU-UOf">
+                                <rect key="frame" x="25" y="583" width="365" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Apply on clean skin, once a week at night. Press liquid chamber to break seal and release formula onto pads, then massage gently to ensure pads are fully saturated. Tear open packette and separate the pads (discarding the divider), then apply one under each eye. Leave on for 10 minutes, remove pads and gently pat in any remaining serum. If desired, follow with your favorite eye crème.
+
+
+</string>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Use" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2u-9r-LhF">
+                                <rect key="frame" x="20" y="561" width="365" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRa-FK-U8E">
+                                <rect key="frame" x="25" y="193" width="365" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">
+A revolution in repair for fresh, youthful-looking eyes.
+
+Starting tonight, rejuvenate the look and feel of your eyes after the stresses of modern life—from long days to lack of sleep, even pollution.
+
+Our Worldwide First: The only eye mask infused with Advanced Night Repair technology.
+
+Instantly, your eye area feels cool and refreshed. In just 10 minutes, eyes look more rested, renewed. Fine, dry lines are plumped as skin is drenched with hydration. Eyes look radiant, infused with luminous youth.</string>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0nn-gN-2Oc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Product Details" id="vn8-TE-fnA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZ6-h4-mZ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3138" y="2309"/>
+        </scene>
+        <!--Product Details-->
+        <scene sceneID="QhO-un-W2Q">
+            <objects>
+                <viewController id="tG1-am-Y1R" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vJP-ZY-0C3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szN-4p-ucF">
+                                <rect key="frame" x="20" y="125" width="365" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Major Eye Impact
+Repair + Lift + Brighten</string>
+                                <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0t8-jQ-BVR">
+                                <rect key="frame" x="20" y="131" width="365" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Discover these high-performance formulas to reveal radiant, supple, more resilient skin. This set features a full-size Resilience Multi-Effect Eye Creme to help the eye area feel firmer, look less puffy—more lifted. Lines, wrinkles and dark circles all appear reduced.
+</string>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Use" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXt-Kj-bVf">
+                                <rect key="frame" x="25" y="413" width="365" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbh-gf-PDl">
+                                <rect key="frame" x="25" y="438" width="365" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Apply Advanced Night Repair AM and PM before your moisturizer.
+
+Apply Resilience Multi-Effect Creme AM on face, over throat.
+
+Apply Resilience Multi-Effect Eye Creme AM and PM around eye area.
+</string>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DzQ-KI-719"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Product Details" id="OTu-5o-yDI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uDI-9i-yy4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3974" y="2338"/>
         </scene>
         <!--Product Details-->
         <scene sceneID="3hq-5g-AxF">
@@ -926,14 +1174,14 @@ Synchronized Multi-Recovery Complex</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Use" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvD-ML-Wio">
-                                <rect key="frame" x="19" y="384" width="365" height="71"/>
+                                <rect key="frame" x="20" y="370" width="365" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzc-Kh-FL4">
-                                <rect key="frame" x="20" y="466" width="370" height="386"/>
+                                <rect key="frame" x="20" y="432" width="369" height="430"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <mutableString key="text">Apply this face serum on clean skin before your moisturizer, AM and PM. Use one dropper. Smooth in gently all over face and throat.
 
@@ -1456,7 +1704,7 @@ Double Action: Fight the Visible Effects of Free Radical Damage. Blue light, inc
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4UB-q3-4yG"/>
+        <segue reference="ntF-Iv-IEG"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>

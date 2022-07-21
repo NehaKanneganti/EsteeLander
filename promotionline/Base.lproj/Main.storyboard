@@ -1614,6 +1614,7 @@ Double Action: Fight the Visible Effects of Free Radical Damage. Blue light, inc
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ND1-vw-AAL">
                                         <rect key="frame" x="0.0" y="204" width="382" height="33"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer">
                                             <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>

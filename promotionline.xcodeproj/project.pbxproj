@@ -20,6 +20,9 @@
 		79F0A20A288890FE00DFEA03 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A209288890FE00DFEA03 /* OnboardingViewController.swift */; };
 		79F0A20C288893D500DFEA03 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A20B288893D500DFEA03 /* OnboardingSlide.swift */; };
 		79F0A20E288895C900DFEA03 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A20D288895C900DFEA03 /* OnboardingCollectionViewCell.swift */; };
+		79F0A2122888C5A500DFEA03 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A2112888C5A500DFEA03 /* QuestionViewController.swift */; };
+		79F0A2142888C5C500DFEA03 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A2132888C5C500DFEA03 /* ResultsViewController.swift */; };
+		79F0A2162888CBCC00DFEA03 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A2152888CBCC00DFEA03 /* QuestionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		79F0A209288890FE00DFEA03 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		79F0A20B288893D500DFEA03 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		79F0A20D288895C900DFEA03 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		79F0A2112888C5A500DFEA03 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		79F0A2132888C5C500DFEA03 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		79F0A2152888CBCC00DFEA03 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,9 @@
 				79F0A1E028888A3C00DFEA03 /* LaunchScreen.storyboard */,
 				79F0A1E328888A3C00DFEA03 /* Info.plist */,
 				79F0A1DB28888A3C00DFEA03 /* promotionline.xcdatamodeld */,
+				79F0A2112888C5A500DFEA03 /* QuestionViewController.swift */,
+				79F0A2132888C5C500DFEA03 /* ResultsViewController.swift */,
+				79F0A2152888CBCC00DFEA03 /* QuestionData.swift */,
 			);
 			path = promotionline;
 			sourceTree = "<group>";
@@ -307,7 +316,10 @@
 				79F0A20A288890FE00DFEA03 /* OnboardingViewController.swift in Sources */,
 				79F0A1D328888A3C00DFEA03 /* AppDelegate.swift in Sources */,
 				79F0A20C288893D500DFEA03 /* OnboardingSlide.swift in Sources */,
+				79F0A2142888C5C500DFEA03 /* ResultsViewController.swift in Sources */,
 				79F0A20E288895C900DFEA03 /* OnboardingCollectionViewCell.swift in Sources */,
+				79F0A2162888CBCC00DFEA03 /* QuestionData.swift in Sources */,
+				79F0A2122888C5A500DFEA03 /* QuestionViewController.swift in Sources */,
 				79F0A1D528888A3C00DFEA03 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

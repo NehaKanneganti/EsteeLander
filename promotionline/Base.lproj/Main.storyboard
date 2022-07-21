@@ -134,7 +134,7 @@
         <!--View Controller-->
         <scene sceneID="t8s-Qb-W2o">
             <objects>
-                <viewController id="7YU-GV-HeU" sceneMemberID="viewController">
+                <viewController id="7YU-GV-HeU" customClass="ViewController" customModule="promotionline" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AIr-qd-al3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,6 +171,9 @@
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="uig-z8-BFv" kind="show" id="X1l-XD-490"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eei-QV-zvb">
                                 <rect key="frame" x="68" y="581" width="279" height="66"/>
@@ -441,21 +444,239 @@
             </objects>
             <point key="canvasLocation" x="2505.7971014492755" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="SAv-zA-azM">
             <objects>
-                <viewController id="ERA-i5-GLP" sceneMemberID="viewController">
+                <viewController id="ERA-i5-GLP" customClass="QuestionViewController" customModule="promotionline" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JUc-d5-yDP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Iy-fh-y4y">
+                                <rect key="frame" x="16" y="352" width="382" height="192"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxP-WZ-dAA">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="ERA-i5-GLP" eventType="touchUpInside" id="AOu-zm-wUv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-zE-i62">
+                                        <rect key="frame" x="0.0" y="53" width="382" height="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="ERA-i5-GLP" eventType="touchUpInside" id="YoN-hT-9qK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctu-9g-g56">
+                                        <rect key="frame" x="0.0" y="106" width="382" height="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="ERA-i5-GLP" eventType="touchUpInside" id="dix-LK-adS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAn-W9-gvZ">
+                                        <rect key="frame" x="0.0" y="159" width="382" height="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="ERA-i5-GLP" eventType="touchUpInside" id="tb7-ww-oau"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgd-lv-9OI">
+                                <rect key="frame" x="16" y="108" width="382" height="36"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Mgw-7Q-xeT">
+                                <rect key="frame" x="16" y="838" width="382" height="4"/>
+                                <color key="progressTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OW9-Lr-PH1">
+                                <rect key="frame" x="16" y="329.5" width="382" height="237"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="rm3-Og-CUQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHa-3Z-52J">
+                                                <rect key="frame" x="0.0" y="0.0" width="306" height="31"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VxM-88-Avg">
+                                                <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="0RN-au-yUG">
+                                        <rect key="frame" x="0.0" y="51" width="382" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H40-8c-wtI">
+                                                <rect key="frame" x="0.0" y="0.0" width="306" height="31"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxG-NF-R6Y">
+                                                <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Lob-Ga-Sg5">
+                                        <rect key="frame" x="0.0" y="102" width="382" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUj-bS-tjW">
+                                                <rect key="frame" x="0.0" y="0.0" width="306" height="31"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VnU-zt-GVV">
+                                                <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="5HP-Ul-CsA">
+                                        <rect key="frame" x="0.0" y="153" width="382" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvA-ni-amz">
+                                                <rect key="frame" x="0.0" y="0.0" width="306" height="31"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PA1-A2-QrC">
+                                                <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ND1-vw-AAL">
+                                        <rect key="frame" x="0.0" y="204" width="382" height="33"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Submit Answer">
+                                            <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="ERA-i5-GLP" eventType="touchUpInside" id="XGE-Wg-SwZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="UwK-dr-jV8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UwK-dr-jV8" firstAttribute="trailing" secondItem="OW9-Lr-PH1" secondAttribute="trailing" constant="16" id="604-g7-O7E"/>
+                            <constraint firstItem="UwK-dr-jV8" firstAttribute="trailing" secondItem="Mgw-7Q-xeT" secondAttribute="trailing" constant="16" id="C4X-fT-4sU"/>
+                            <constraint firstItem="3Iy-fh-y4y" firstAttribute="leading" secondItem="UwK-dr-jV8" secondAttribute="leading" constant="16" id="JYr-To-YRZ"/>
+                            <constraint firstItem="UwK-dr-jV8" firstAttribute="trailing" secondItem="3Iy-fh-y4y" secondAttribute="trailing" constant="16" id="MgE-0A-dOP"/>
+                            <constraint firstItem="Mgw-7Q-xeT" firstAttribute="leading" secondItem="UwK-dr-jV8" secondAttribute="leading" constant="16" id="Rp1-92-kz5"/>
+                            <constraint firstItem="UwK-dr-jV8" firstAttribute="bottom" secondItem="Mgw-7Q-xeT" secondAttribute="bottom" constant="20" id="YZK-rr-ZOl"/>
+                            <constraint firstItem="OW9-Lr-PH1" firstAttribute="leading" secondItem="UwK-dr-jV8" secondAttribute="leading" constant="16" id="aCc-Ry-h7O"/>
+                            <constraint firstItem="3Iy-fh-y4y" firstAttribute="centerY" secondItem="JUc-d5-yDP" secondAttribute="centerY" id="n7Q-c3-d6h"/>
+                            <constraint firstItem="OW9-Lr-PH1" firstAttribute="centerY" secondItem="JUc-d5-yDP" secondAttribute="centerY" id="oFK-VA-jZo"/>
+                            <constraint firstItem="UwK-dr-jV8" firstAttribute="trailing" secondItem="Fgd-lv-9OI" secondAttribute="trailing" constant="16" id="qix-n6-3oc"/>
+                            <constraint firstItem="Fgd-lv-9OI" firstAttribute="leading" secondItem="UwK-dr-jV8" secondAttribute="leading" constant="16" id="vpH-Qe-I2O"/>
+                            <constraint firstItem="Fgd-lv-9OI" firstAttribute="top" secondItem="UwK-dr-jV8" secondAttribute="top" constant="20" id="vto-bA-8hb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dnP-pk-gCK"/>
+                    <connections>
+                        <outlet property="multiLabel1" destination="QHa-3Z-52J" id="rUT-RP-Coy"/>
+                        <outlet property="multiLabel2" destination="H40-8c-wtI" id="aVy-vm-xAP"/>
+                        <outlet property="multiLabel3" destination="XUj-bS-tjW" id="rwC-1L-8gY"/>
+                        <outlet property="multiLabel4" destination="DvA-ni-amz" id="z9v-b8-Ld3"/>
+                        <outlet property="multiSwitch1" destination="JxG-NF-R6Y" id="Yeu-lJ-BBb"/>
+                        <outlet property="multiSwitch2" destination="VnU-zt-GVV" id="0IO-sY-rf8"/>
+                        <outlet property="multiSwitch3" destination="VnU-zt-GVV" id="VeC-y1-jHU"/>
+                        <outlet property="multiSwitch4" destination="PA1-A2-QrC" id="u2R-JW-97m"/>
+                        <outlet property="multipleStackView" destination="OW9-Lr-PH1" id="MW4-QM-poo"/>
+                        <outlet property="questionLabel" destination="Fgd-lv-9OI" id="vo0-cA-eZZ"/>
+                        <outlet property="questionProgressView" destination="Mgw-7Q-xeT" id="u5Q-xT-kgR"/>
+                        <outlet property="singleButton1" destination="JxP-WZ-dAA" id="Pb0-dx-JIC"/>
+                        <outlet property="singleButton2" destination="fsl-zE-i62" id="shr-Hj-TF9"/>
+                        <outlet property="singleButton3" destination="ctu-9g-g56" id="iLy-Z9-MIa"/>
+                        <outlet property="singleButton4" destination="rAn-W9-gvZ" id="Vpi-n9-QPH"/>
+                        <outlet property="singleStackView" destination="3Iy-fh-y4y" id="8Up-Ud-nDH"/>
+                        <segue destination="yPY-NG-usa" kind="show" identifier="ResultsSegue" id="Zed-bF-Dfe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxI-CR-msj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3297" y="92"/>
+            <point key="canvasLocation" x="2466.666666666667" y="900"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="xA0-Z6-W8x">
+            <objects>
+                <viewController id="yPY-NG-usa" customClass="ResultsViewController" customModule="promotionline" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I4V-rY-gZz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BKy-0g-quJ">
+                                <rect key="frame" x="16" y="416" width="382" height="64.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST3-jW-yIB">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="36"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPh-WJ-dwb">
+                                        <rect key="frame" x="0.0" y="44" width="382" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eEZ-bj-4BI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eEZ-bj-4BI" firstAttribute="trailing" secondItem="BKy-0g-quJ" secondAttribute="trailing" constant="16" id="DSQ-Zd-cIh"/>
+                            <constraint firstItem="BKy-0g-quJ" firstAttribute="centerY" secondItem="I4V-rY-gZz" secondAttribute="centerY" id="I4P-un-vcM"/>
+                            <constraint firstItem="BKy-0g-quJ" firstAttribute="leading" secondItem="eEZ-bj-4BI" secondAttribute="leading" constant="16" id="lna-hO-n62"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Results" id="eTV-ZW-4Id"/>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="ST3-jW-yIB" id="0G2-Sx-OlF"/>
+                        <outlet property="resultDefinitionLabel" destination="OPh-WJ-dwb" id="Czt-ws-y2t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LWJ-6y-TP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3199" y="900"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cgX-dQ-8YN">
@@ -475,8 +696,27 @@
             </objects>
             <point key="canvasLocation" x="763.768115942029" y="75.669642857142847"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0KW-Ds-fEC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uig-z8-BFv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="QoE-LM-h88"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qJo-oL-nMS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ERA-i5-GLP" kind="relationship" relationship="rootViewController" id="ZzK-Ru-744"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OjA-hS-Bl5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673.913043478261" y="900"/>
+        </scene>
     </scenes>
-    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="12" width="500" height="500"/>
         <image name="13" width="308" height="424"/>

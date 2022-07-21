@@ -131,26 +131,72 @@
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="83.705357142857139"/>
         </scene>
-        <!--Routine Tracker-->
-        <scene sceneID="QTT-qP-oyM">
+        <!--Tracker View Controller-->
+        <scene sceneID="IOK-9x-cJc">
             <objects>
-                <viewController id="N2N-vf-OOt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xsk-aq-yf4">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="pHc-4Z-tQL" customClass="TrackerViewController" customModule="promotionline" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ArX-uV-SU1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Aup-9U-05Y"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skincare Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwU-3h-M5c">
+                                <rect key="frame" x="20" y="109" width="179" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Routine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1L9-Ng-d0e">
+                                <rect key="frame" x="20" y="216" width="112" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UW1-xy-koe">
+                                <rect key="frame" x="20" y="159" width="281" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DKZ-24-ale">
+                                <rect key="frame" x="20" y="275" width="289" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8P-In-315">
+                                <rect key="frame" x="309" y="159" width="60" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add">
+                                    <fontDescription key="titleFontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapButton:" destination="pHc-4Z-tQL" eventType="touchUpInside" id="bE5-PX-vjY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xdO-Bu-9gv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Routine Tracker" id="Rfv-NZ-74u"/>
+                    <navigationItem key="navigationItem" id="qig-fb-Isk"/>
+                    <connections>
+                        <outlet property="txtAdd" destination="UW1-xy-koe" id="Djj-4W-ioR"/>
+                        <outlet property="txtField" destination="DKZ-24-ale" id="wog-5W-Yg8"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fvX-aX-eiM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S8x-Ux-pJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="-629"/>
+            <point key="canvasLocation" x="1640.5797101449277" y="-597.32142857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="t8s-Qb-W2o">
             <objects>
-                <viewController id="7YU-GV-HeU" customClass="ViewController" customModule="promotionline" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7YU-GV-HeU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AIr-qd-al3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,7 +234,7 @@
                                     <fontDescription key="titleFontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="N2N-vf-OOt" kind="show" id="8yc-hS-K69"/>
+                                    <segue destination="pHc-4Z-tQL" kind="show" id="l4a-Ht-sQK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0K-g4-TWr">
@@ -953,7 +999,7 @@ Intense Reset Concentrate</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY8-KV-tdc">
                                 <rect key="frame" x="20" y="207" width="374" height="409"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">This breakthrough overnight treatment, with Chronolux S.O.S. Technology™, rescues and resets the look of skin fast. Immerses skin in sustained, 24-hour moisture with 15X concentrated Hyaluronic Acid in a multi-molecular weight complex.
+                                <string key="text">This breakthrough overnight treatment, with Chronolux S.O.S. Technology™, rescues and resets the look of skin fast. Immerses skin in sustained, 24-hour moisture with 15X concentrated Hyaluronic Acid in a multi-molecular weight complex.
 
 SOOTHES the look of irritation—in just 1 hour.
 
@@ -961,7 +1007,7 @@ FORTIFIES skin so it can better respond to intense visible stressors. Allows you
 
 RESTORES a more poreless, refined texture and significantly boosts skin’s luminous clarity.
 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -996,11 +1042,11 @@ Concentrated Recovery PowerFoil Mask</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zk-gp-L28">
                                 <rect key="frame" x="20" y="126" width="374" height="586"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Starting tonight, reset the look of your skin after the visible assaults of modern life with this innovative weekly treatment mask. Instantly, skin looks fresher, renewed.
+                                <string key="text">Starting tonight, reset the look of your skin after the visible assaults of modern life with this innovative weekly treatment mask. Instantly, skin looks fresher, renewed.
 Our Worldwide First: PowerFoil. High-performance foil-backed sheet mask creates a protective barrier, allowing our potent technologies to penetrate fast and deep within skin's surface and helping to lock in moisture.
 
 2X Hyaluronic Acid. Each treatment delivers a surge of liquid revitalization, immersing skin in a double dose of Advanced Night Repair Serum's powerful moisture magnet. Also includes our proven ChronoluxCB™ technologies. Experience an ultimate infusion of youthful moisture.
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1183,7 +1229,7 @@ Synchronized Multi-Recovery Complex</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzc-Kh-FL4">
                                 <rect key="frame" x="20" y="432" width="369" height="430"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Apply this face serum on clean skin before your moisturizer, AM and PM. Use one dropper. Smooth in gently all over face and throat.
+                                <string key="text">Apply this face serum on clean skin before your moisturizer, AM and PM. Use one dropper. Smooth in gently all over face and throat.
 
 Try Our Heart Ritual:
 
@@ -1193,7 +1239,7 @@ Massage onto face in a heart shape: Using all fingers of both hands, start at th
 
 Next, trace a larger heart from middle forehead out to temples. Glide down the sides of the face and close the heart again under your chin.
 
-Finish the Heart Ritual by gently massaging onto neck in a downward motion.</mutableString>
+Finish the Heart Ritual by gently massaging onto neck in a downward motion.</string>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1326,13 +1372,13 @@ Apply Advanced Night Repair Eye Supercharged Gel-Creme AM and PM around eye area
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmC-mb-0oG">
                                 <rect key="frame" x="20" y="126" width="374" height="586"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Our revolutionary Advanced Night Repair serum with its exclusive technology helps skin maximize its natural rhythm of repair and protection to deliver visible renewal. Significantly reduces the look of multiple signs of aging caused by the environmental assaults of modern life. Wake up to more youthful-looking skin.
+                                <string key="text">Our revolutionary Advanced Night Repair serum with its exclusive technology helps skin maximize its natural rhythm of repair and protection to deliver visible renewal. Significantly reduces the look of multiple signs of aging caused by the environmental assaults of modern life. Wake up to more youthful-looking skin.
 
 Revitalizing Supreme+ Creme significantly improves firmness, density and elasticity for a more lifted look. Reduces the look of lines and wrinkles. Skin is stronger, radiant, deeply hydrated. Glows with a new healthy-looking vitality.
 
 This limited-edition collection includes:
 Advanced Night Repair Synchronized Multi-Recovery Complex, full-size (1.7oz. oz./50ml)
-4 Revitalizing Supreme+ Youth Power Creme, deluxe travel sizes (.24 oz./7ml each)</mutableString>
+4 Revitalizing Supreme+ Youth Power Creme, deluxe travel sizes (.24 oz./7ml each)</string>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1726,8 +1772,14 @@ Double Action: Fight the Visible Effects of Free Radical Damage. Blue light, inc
         <image name="ten" width="500" height="500"/>
         <image name="three" width="500" height="500"/>
         <image name="two" width="500" height="500"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

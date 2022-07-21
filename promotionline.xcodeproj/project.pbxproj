@@ -23,6 +23,7 @@
 		79F0A2122888C5A500DFEA03 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A2112888C5A500DFEA03 /* QuestionViewController.swift */; };
 		79F0A2142888C5C500DFEA03 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A2132888C5C500DFEA03 /* ResultsViewController.swift */; };
 		79F0A2162888CBCC00DFEA03 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A2152888CBCC00DFEA03 /* QuestionData.swift */; };
+		79F0A2282889BC2200DFEA03 /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0A2272889BC2200DFEA03 /* TrackerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		79F0A2112888C5A500DFEA03 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		79F0A2132888C5C500DFEA03 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		79F0A2152888CBCC00DFEA03 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
+		79F0A2272889BC2200DFEA03 /* TrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				79F0A1D428888A3C00DFEA03 /* SceneDelegate.swift */,
 				79F0A1D628888A3C00DFEA03 /* ViewController.swift */,
 				79F0A1D828888A3C00DFEA03 /* Main.storyboard */,
+				79F0A2272889BC2200DFEA03 /* TrackerViewController.swift */,
 				79F0A1DE28888A3C00DFEA03 /* Assets.xcassets */,
 				79F0A1E028888A3C00DFEA03 /* LaunchScreen.storyboard */,
 				79F0A1E328888A3C00DFEA03 /* Info.plist */,
@@ -321,6 +324,7 @@
 				79F0A2162888CBCC00DFEA03 /* QuestionData.swift in Sources */,
 				79F0A2122888C5A500DFEA03 /* QuestionViewController.swift in Sources */,
 				79F0A1D528888A3C00DFEA03 /* SceneDelegate.swift in Sources */,
+				79F0A2282889BC2200DFEA03 /* TrackerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

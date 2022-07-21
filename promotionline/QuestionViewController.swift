@@ -65,7 +65,7 @@ class QuestionViewController: UIViewController {
                      type: .single,
                      answers: [
                         Answer(text: "They are visible", type: .lines),
-                        Answer(text: "They ae visible in some areas", type: .lines),
+                        Answer(text: "They are visible in some areas", type: .lines),
                         Answer(text: "Not wrinkles, but I have more pores", type: .pores),
                         Answer(text: "They are not visible", type: .nolines),
                        
